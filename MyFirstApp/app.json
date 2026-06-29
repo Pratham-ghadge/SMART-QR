@@ -23,8 +23,11 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "permissions": [
-        "CAMERA"
-      ]
+        "CAMERA",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.prath1m.SmartQR"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -36,6 +39,11 @@
           "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b635431b-4048-4587-bedd-2257cc0e51f6"
+      }
+    }
   }
 }
